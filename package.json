@@ -1,0 +1,23 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "simple workforce information repository",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EyesackEl/employee-tracker.git"
+  },
+  "author": "Isaac LaFlamme",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EyesackEl/employee-tracker/issues"
+  },
+  "homepage": "https://github.com/EyesackEl/employee-tracker#readme"
+}
