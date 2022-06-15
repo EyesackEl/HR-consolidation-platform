@@ -41,8 +41,6 @@ const makeEmp = async (employee) => {
             </div>`
         ;
     } else if (employee.role === 'Manager') {
-        console.log(valueOf(employee.office));
-
         var empCard =
 `            <div class = 'bdr col-sm-3 text-center m-2'>
                 <h1>${employee.name}</h1>
