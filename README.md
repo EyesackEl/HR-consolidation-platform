@@ -1,4 +1,4 @@
-# Employee Tracker
+# HR Consolidation Platform
 
 - [Installation](#installation)
 - [Usage](#usage)
