@@ -4,8 +4,6 @@ const intern = new Intern('Isaac', '1', 'isaac.laflamme@gmail.com', 'Intern', 'W
 
 describe('Intern Class', () => {
     it("Intern role should default to 'Intern ", () => {
-        const intern = new Intern('Isaac', '1', 'isaac.laflamme@gmail.com', 'Intern');
-        
         expect(intern.getRole()).toBe('Intern');
     })
     it('Intern name should mimic inputted name', () => {

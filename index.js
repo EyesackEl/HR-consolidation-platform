@@ -41,6 +41,8 @@ const makeEmp = async (employee) => {
             </div>`
         ;
     } else if (employee.role === 'Manager') {
+        console.log(valueOf(employee.office));
+
         var empCard =
 `            <div class = 'bdr col-sm-3 text-center m-2'>
                 <h1>${employee.name}</h1>
@@ -80,8 +82,6 @@ const makeEmp = async (employee) => {
 
     let topOfFile = fs.readFileSync('./dist/index.html', 'utf8');
 
-    console.log(topOfFile)
-
     await fs.writeFile('./dist/index.html', topOfFile + `\n` + empCard, err =>{
         err ? console.error(err) : console.log(`\n\tEmployee Card Added\n`)
     });
@@ -89,7 +89,6 @@ const makeEmp = async (employee) => {
 
 const getSpecs = async (employee) => {
     let id = employee.id
-    console.log(employee.role);
     if (employee.role === 'N/A') {
         await makeEmp(employee);
     } else if (employee.role === 'Manager') {
